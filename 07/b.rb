@@ -18,7 +18,6 @@ counted = []
 
 while !sgb.empty?
   sgb += bag_hash[sgb.first.first].map {|b| [b.first, b.last*sgb.first.last]}
-  puts sgb.inspect
   counter += sgb.first.last
   counted << sgb.shift
 end
