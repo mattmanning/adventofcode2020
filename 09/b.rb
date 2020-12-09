@@ -5,9 +5,10 @@ e = 1
 t = 15353384
 
 while true
-  sum = numbers[s..e].sum
+  range = numbers[s..e]
+  sum = range.sum
   if sum == t
-    puts numbers[s..e].min + numbers[s..e].max
+    puts range.min + range.max
     exit
   end
   s += 1 if sum > t
